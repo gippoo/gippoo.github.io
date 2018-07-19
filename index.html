@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Number Guessing Game! xD</h1>
-<p>I am thinking of a number between 1 and 10 (inclusive). Try and guess it LOL.</p>
-<p>O u also only get 3 guesses GL</p>
+<h2>Number Guessing Game! xD</h2>
+<p id="test">I am thinking of a number between 1 and 10 (inclusive). Try and guess it LOL.</p>
+
 
 <form id = "guessnum">
 Guess a number: <input type = "text" id = "guessn"/>
@@ -12,6 +12,7 @@ Guess a number: <input type = "text" id = "guessn"/>
 </form>
 
 <p id="outcome"></p>
+<p id="lives">Lives: 3</p>
 
 <br><br><button type="button" onclick='reset();'>Play Again</button>
 
@@ -26,8 +27,10 @@ function guessing() {
     		lives -= 1
             if(lives == 0) {
             	document.getElementById("outcome").innerHTML = "U ded";
+                document.getElementById("lives").innerHTML = "Lives: 0";
             } else {
     			document.getElementById("outcome").innerHTML = "Wrong. U suk";
+                document.getElementById("lives").innerHTML = "Lives: "+lives;
             }
     	} else {
     		document.getElementById("outcome").innerHTML = "Wew";
@@ -42,6 +45,7 @@ function reset() {
 	secret = Math.floor(Math.random() * 10 + 1);
     document.getElementById('guessn').value = '';
     document.getElementById("outcome").innerHTML = "";
+    document.getElementById("lives").innerHTML = "Lives: 3";
 }
 
 </script>
