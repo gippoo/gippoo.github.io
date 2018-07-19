@@ -23,7 +23,7 @@
       model.fit(xs, ys, {epochs: 10}).then(() => {
         // Use the model to do inference on a data point the model hasn't seen before:
         // Open the browser devtools to see the output
-        model.predict(tf.tensor2d([5], [1, 1])).print();
+        const pred = model.predict(tf.tensor2d([5], [1, 1]));
       });
     </script>
   </head>
@@ -32,7 +32,7 @@
   <body>
     <p id="demo"></p>
     <script>
-    document.getElementById("demo").innerHTML = "Press F12";
+    document.getElementById("demo").innerHTML = pred;
     </script>
   </body>
 </html>
