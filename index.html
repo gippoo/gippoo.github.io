@@ -9,7 +9,7 @@
 <form id = "guessnum">
 Guess a number: <input type = "text" id = "guessn"/>
 <br>
-<button type="button" onclick='guessing();'>Guess!</button>
+<button type="button" id="b1" onclick='guessing();'>Guess!</button>
 </form>
 
 <p id="outcome"></p>
@@ -29,12 +29,16 @@ function guessing() {
             if(lives == 0) {
             	document.getElementById("outcome").innerHTML = "U ded";
                 document.getElementById("lives").innerHTML = "Lives: 0";
+                document.getElementById("b1").disabled = true;
+                document.getElementById("b1").innerHTML = "U Lost"
             } else {
     			document.getElementById("outcome").innerHTML = "Wrong. U suk";
                 document.getElementById("lives").innerHTML = "Lives: "+lives;
             }
     	} else {
     		document.getElementById("outcome").innerHTML = "Wew";
+            document.getElementById("b1").disabled = true;
+            document.getElementById("b1").innerHTML = "U won";
     	}
 	} else {
     	document.getElementById("outcome").innerHTML = "U ded";
@@ -47,6 +51,8 @@ function reset() {
     document.getElementById('guessn').value = '';
     document.getElementById("outcome").innerHTML = "";
     document.getElementById("lives").innerHTML = "Lives: 3";
+    document.getElementById("b1").disabled = false;
+    document.getElementById("b1").innerHTML = "Guess!";
 }
 
 </script>
@@ -54,4 +60,3 @@ function reset() {
     
   </body>
 </html>
-
