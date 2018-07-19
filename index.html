@@ -24,7 +24,7 @@ var secret = Math.floor(Math.random() * 10 + 1);
 function guessing() {
 	if(lives > 0) {
 		var guess = document.getElementById('guessn').value;
-		if (parseInt(guess) != secret) {
+		if (parseInt(guess) > secret) {
     		lives -= 1
             if(lives == 0) {
             	document.getElementById("outcome").innerHTML = "U ded";
@@ -32,10 +32,22 @@ function guessing() {
                 document.getElementById("b1").disabled = true;
                 document.getElementById("b1").innerHTML = "U Lost"
             } else {
-    			document.getElementById("outcome").innerHTML = "Wrong. U suk";
+    			document.getElementById("outcome").innerHTML = "U suk. It's lower";
                 document.getElementById("lives").innerHTML = "Lives: "+lives;
             }
-    	} else {
+    	} else if(parseInt(guess) < secret) {
+    		lives -= 1
+            if(lives == 0) {
+            	document.getElementById("outcome").innerHTML = "U ded";
+                document.getElementById("lives").innerHTML = "Lives: 0";
+                document.getElementById("b1").disabled = true;
+                document.getElementById("b1").innerHTML = "U Lost"
+            } else {
+    			document.getElementById("outcome").innerHTML = "U suk. It's higher";
+                document.getElementById("lives").innerHTML = "Lives: "+lives;
+            }
+        
+        } else {
     		document.getElementById("outcome").innerHTML = "Wew (◠‿◠✿)";
             document.getElementById("b1").disabled = true;
             document.getElementById("b1").innerHTML = "U won";
@@ -44,7 +56,6 @@ function guessing() {
     	document.getElementById("outcome").innerHTML = "U ded";
     }
 }
-
 function reset() {
 	lives = 3
 	secret = Math.floor(Math.random() * 10 + 1);
@@ -54,7 +65,6 @@ function reset() {
     document.getElementById("b1").disabled = false;
     document.getElementById("b1").innerHTML = "Guess!";
 }
-
 </script>
       
     
