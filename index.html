@@ -6,6 +6,7 @@
 
     <!-- Place your code in the script tag below. You can also use an external .js file -->
     <script>
+      var pred
       // Notice there is no 'import' statement. 'tf' is available on the index-page
       // because of the script tag above.
 
@@ -24,9 +25,9 @@
       model.fit(xs, ys, {epochs: 10}).then(() => {
         // Use the model to do inference on a data point the model hasn't seen before:
         // Open the browser devtools to see the output
-        model.predict(tf.tensor2d([5], [1, 1]));
+        pred = model.predict(tf.tensor2d([5], [1, 1]));
       });
-    document.getElementById("demo").innerHTML = "pred";
+    document.getElementById("demo").innerHTML = pred;
     </script>
 
   </body>
