@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <body>
 <h2>Number Guessing Game! xD</h2>
@@ -12,6 +13,9 @@ Guess a number: <input type = "text" id = "guessn"/>
 
 <p id="outcome"></p>
 
+<br><br><button type="button" onclick='reset();'>Play Again</button>
+
+
 <script>
 var secret = Math.floor(Math.random() * 10 + 1);
 function guessing() {
@@ -22,6 +26,13 @@ function guessing() {
     	document.getElementById("outcome").innerHTML = "Wew";
     }
 }
+
+function reset() {
+	secret = Math.floor(Math.random() * 10 + 1);
+    document.getElementById('guessn').value = '';
+    document.getElementById("outcome").innerHTML = "";
+}
+
 </script>
       
     
