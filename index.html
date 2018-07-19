@@ -23,8 +23,9 @@
       model.fit(xs, ys, {epochs: 10}).then(() => {
         // Use the model to do inference on a data point the model hasn't seen before:
         // Open the browser devtools to see the output
-        document.getElementById("demo").innerHTML = model.predict(tf.tensor2d([5], [1, 1])).print();
+        model.predict(tf.tensor2d([5], [1, 1])).print();
       });
+      document.getElementById("demo").innerHTML = "press f12";
     </script>
   </head>
 
