@@ -1,10 +1,29 @@
 <html>
-  <body>
-    <h2>Eventually a Face Generator</h2>
-    <p id="test">xD</p>
-    <br>
-    <br>
-    <button type="button" onclick='document.getElementById("test").innerHTML = "Learning JavaScript first"'>Click Me</button>
+<body>
+<h2>Number Guessing Game! xD</h2>
+<p id="test">I am thinking of a number between 1 and 10 (inclusive). Try and guess it LOL.</p>
 
+
+<form id = "guessnum">
+Guess a number: <input type = "text" id = "guessn"/>
+<br>
+<button type="button" onclick='guessing();'>Guess!</button>
+</form>
+
+<p id="outcome"></p>
+
+<script>
+var secret = Math.floor(Math.random() * 10 + 1);
+function guessing() {
+	var guess = document.getElementById('guessn').value;
+	if (parseInt(guess) != secret) {
+    	document.getElementById("outcome").innerHTML = "Wrong. U suk";
+    } else {
+    	document.getElementById("outcome").innerHTML = "Wew";
+    }
+}
+</script>
+      
+    
   </body>
 </html>
