@@ -22,6 +22,16 @@
     color: #8bb6f9;
   }
   
+  a.proje:link {
+    color: white;
+  }
+  a.proje:visited {
+    color: white;
+  }  
+  a.proje:hover {
+    color: white;
+  }
+  
   a.title:link {
     color: #bfd8ff;
   }
@@ -43,7 +53,7 @@
     font-family: "Trebuchet MS";
   }
   
-  div.text {
+  div.title_text {
   	position: absolute;
     left: 10px;
     top: 10px;
@@ -63,7 +73,7 @@
     text-align: center;
   }
   
-  div.link {
+  div.proj {
     margin: auto;
     width: 394px;
     height: 180px;
@@ -72,9 +82,10 @@
     margin-top: 10px;
     margin-bottom: 10px;
     display: inline-block;
+    cursor: pointer;
   }
   
-  div.link:hover {
+  div.proj:hover {
      opacity: 0.9;
      background-color: #619bf9;
   }
@@ -87,17 +98,19 @@
 <body>
 
 <div class="title">
-<div class="text">Gary Ip | 
-<a class="title" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a> | 
-  <a class="title" href="https://github.com/gippoo" style="text-decoration:none;">GitHub</a></div>
+  <div class="title_text">
+    Gary Ip | 
+    <a class="title" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a> | 
+    <a class="title" href="https://github.com/gippoo" style="text-decoration:none;">GitHub</a>
+  </div>
 </div>
 
 
 <div class="content">
 
-    <div class="link"><a class="proj" href="https://gippoo.github.io/digitclassifier2/" style="text-decoration:none;">
+    <div class="proj"><a class="proje" href="https://gippoo.github.io/digitclassifier2/" style="text-decoration:none;">
         <img src="https://github.com/gippoo/gippoo.github.io/raw/master/digitclassifier.png">
-        <span style="margin-left:5px;cursor:pointer;">Digit Classifier // MNIST, Keras, TensorFlow.js, p5.js</span></a></div>
+        <span style="margin-left:5px;">Digit Classifier // MNIST, Keras, TensorFlow.js, p5.js</span></a></div>
     <br>
     
     <a class="proj" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
