@@ -26,30 +26,40 @@
   a.title:hover {
     color: #6da6ff;
   }
-  
-  body {
-    color: white;
-    font-family: "Trebuchet MS";
-    background-color: #303030;
-    font-size:16px;
-  }
-  
+
   div.title {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    height: 78px;
+    height: 56px;
     background-color: #4a70ad;
+    color: white;
+    font-family: "Trebuchet MS";
+    text-align: center;
   }
   
-  p.title {
+  div.text {
+  	position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 24px;
+  }
+  
+  p.margin {
   	margin-left:10px;
-    font-size:24px;
   }
   
-  p.space {
-    margin-top: 100px;
+  div.content {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-family: "Trebuchet MS";
+    background-color: #303030;
+    font-size: 16px;
   }
 
   </style>
@@ -59,28 +69,31 @@
 <body>
 
 <div class="title">
-<p class="title">Gary Ip | <a class="title" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a></p>
+	<div class="text">Gary Ip | <a class="title" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a></div>
 </div>
 
-<p class="space"></p>
 
-<a class="proj" href="https://gippoo.github.io/digitclassifier2/">Digit Classifier</a> // MNIST, Keras, TensorFlow.js, p5.js
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/characterclassifier/">Shokugeki</a> // Face recognition in anime
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/dodger/">monkaS</a> // Simple game
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/animecolorizer/">Colorizer</a> // Coloring grayscale images with U-net architecture
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/geneticalg/">Genetics</a> // JavaScript implementation of a genetic algorithm
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/graphics/blob">Blobs</a> // Simulations and visualizations
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/music">Music</a> // Anime music generation with a neural network
-<br><br>
-<a class="proj" href ="https://gippoo.github.io/graphics/cat">Cat Racing</a> // Experimenting with sprites/pixel art and animation
+<div class="content">
+  <p class="margin">
+    <a class="proj" href="https://gippoo.github.io/digitclassifier2/">Digit Classifier</a> // MNIST, Keras, TensorFlow.js, p5.js
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/characterclassifier/">Shokugeki</a> // Face recognition in anime
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/dodger/">monkaS</a> // Simple game
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/animecolorizer/">Colorizer</a> // Coloring grayscale images with U-net architecture
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/geneticalg/">Genetics</a> // JavaScript implementation of a genetic algorithm
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/graphics/blob">Blobs</a> // Simulations and visualizations
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/music">Music</a> // Anime music generation with a neural network
+    <br><br>
+    <a class="proj" href ="https://gippoo.github.io/graphics/cat">Cat Racing</a> // Experimenting with sprites/pixel art and animation
+  </p>
+</div>
 
 </body>
 </html>
