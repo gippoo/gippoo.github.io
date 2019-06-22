@@ -50,10 +50,6 @@
     font-size: 150%;
   }
   
-  p.margin {
-  	margin-left:10px;
-  }
-  
   div.content {
     position: absolute;
     left: 0;
@@ -63,7 +59,23 @@
     font-family: "Trebuchet MS";
     background-color: #303030;
     font-size: 100%;
+    margin-left: 10px;
   }
+  
+  div.link {
+    margin: auto;
+    width: 52.465%;
+    height: 180px;
+    background-color: #606060;
+    font-size: 100%;
+    margin-top: 10px;
+  }
+  
+  div.link:hover {
+     opacity: 0.75;
+     background-color: #619bf9;
+  }
+  
 
   </style>
   
@@ -79,9 +91,13 @@
 
 
 <div class="content">
-  <p class="margin">
-    <a class="proj" href="https://gippoo.github.io/digitclassifier2/">Digit Classifier</a> // MNIST, Keras, TensorFlow.js, p5.js
-    <br><br>
+
+    <div class="link"><a class="proj" href="https://gippoo.github.io/digitclassifier2/">
+        <img src="https://github.com/gippoo/gippoo.github.io/raw/master/digitclassifier.png"></a>
+        <br>
+        <span style="margin-left:5px;cursor:pointer;">Digit Classifier // MNIST, Keras, TensorFlow.js, p5.js</span></div>
+    <br>
+    
     <a class="proj" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
     <br><br>
     <a class="proj" href ="https://gippoo.github.io/characterclassifier/">Shokugeki</a> // Face recognition in anime
@@ -97,7 +113,6 @@
     <a class="proj" href ="https://gippoo.github.io/music">Music</a> // Anime music generation with a neural network
     <br><br>
     <a class="proj" href ="https://gippoo.github.io/graphics/cat">Cat Racing</a> // Experimenting with sprites/pixel art and animation
-  </p>
 </div>
 
 </body>
