@@ -10,71 +10,66 @@
   <style>
   body {
   	background-color: #303030;
+  	font-family: "Trebuchet MS";
+  	color: white;
   }
   
-  a.proj:link {
+  a.project:link {
     color: white;
   }
-  a.proj:visited {
+  a.project:visited {
     color: white;
   }  
-  a.proj:hover {
+  a.project:hover {
     color: #8bb6f9;
   }
   
-  a.proje:link {
+  a.projimg:link {
     color: white;
   }
-  a.proje:visited {
+  a.projimg:visited {
     color: white;
   }  
-  a.proje:hover {
+  a.projimg:hover {
     color: white;
   }
   
-  a.title:link {
+  a.header:link {
     color: #bfd8ff;
   }
-  a.title:visited {
+  a.header:visited {
     color: #bfd8ff;
   }  
-  a.title:hover {
+  a.header:hover {
     color: #6da6ff;
   }
 
-  div.title {
+  div.header {
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
     height: 54px;
     background-color: #4a70ad;
-    color: white;
-    font-family: "Trebuchet MS";
   }
   
   div.title_text {
   	position: absolute;
     left: 10px;
     top: 10px;
-    font-size: 150%;
+    font-size: 24px;
   }
   
   div.content {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 54px;
     right: 0;
-    color: white;
-    font-family: "Trebuchet MS";
-    background-color: #303030;
-    font-size: 100%;
-    margin-left: 10px;
+    font-size: 16px;
     text-align: center;
   }
   
-  div.proj {
-    margin: auto;
+  div.projimg {
     width: 394px;
     height: 180px;
     background-color: #606060;
@@ -84,7 +79,7 @@
     cursor: pointer;
   }
   
-  div.proj:hover {
+  div.projimg:hover {
      opacity: 0.85;
      background-color: #619bf9;
   }
@@ -96,39 +91,55 @@
 
 <body>
 
-<div class="title">
+
+<div class="header">
   <div class="title_text">
     Gary Ip | 
-    <a class="title" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a> | 
-    <a class="title" href="https://github.com/gippoo" style="text-decoration:none;">GitHub</a>
+    <a class="header" href="https://gippoo.github.io/resume/" target="_blank" style="text-decoration:none;">Resume</a> | 
+    <a class="header" href="https://github.com/gippoo" style="text-decoration:none;">GitHub</a>
   </div>
 </div>
 
 
 <div class="content">
-    <a class="proje" href="https://gippoo.github.io/digitclassifier2/" style="text-decoration:none;">
-        <div class="proj">
+    <a class="projimg" href="https://gippoo.github.io/digitclassifier2/" style="text-decoration:none;">
+        <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/digitclassifier.png">
             <div style="margin-left:5px;">Digit Classifier // MNIST, Keras, TensorFlow.js, p5.js</div>
         </div>
     </a>
     
+    <a class="projimg" href="https://gippoo.github.io/pizzacat/" style="text-decoration:none;">
+        <div class="projimg">
+            <img src="https://github.com/gippoo/gippoo.github.io/raw/master/ConsiderateImmaterialBalloonfish-small.gif" width= 394 height = 149>
+            <div style="margin-left:5px;">Pizza Cat // Google Quickdraw Classification</div>
+        </div>
+    </a>
+    
+    <a class="projimg" href="https://gippoo.github.io/characterclassifier/" style="text-decoration:none;">
+        <div class="projimg">
+            <img src="https://github.com/gippoo/characterclassifier/raw/master/sample.jpg" width= 394 height = 149>
+            <div style="margin-left:5px;">Shokugeki // Face recognition in anime</div>
+        </div>
+    </a>
+    
+
 <br>
-    <a class="proj" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
+    <a class="project" href ="https://gippoo.github.io/pizzacat/">Pizza Cat</a> // Classification using Google's Quickdraw dataset
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/characterclassifier/">Shokugeki</a> // Face recognition in anime
+    <a class="project" href ="https://gippoo.github.io/characterclassifier/">Shokugeki</a> // Face recognition in anime
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/dodger/">monkaS</a> // Simple game
+    <a class="project" href ="https://gippoo.github.io/dodger/">monkaS</a> // Simple game
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/animecolorizer/">Colorizer</a> // Coloring grayscale images with U-net architecture
+    <a class="project" href ="https://gippoo.github.io/animecolorizer/">Colorizer</a> // Coloring grayscale images with U-net architecture
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/geneticalg/">Genetics</a> // JavaScript implementation of a genetic algorithm
+    <a class="project" href ="https://gippoo.github.io/geneticalg/">Genetics</a> // JavaScript implementation of a genetic algorithm
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/graphics/blob">Blobs</a> // Simulations and visualizations
+    <a class="project" href ="https://gippoo.github.io/graphics/blob">Blobs</a> // Simulations and visualizations
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/music">Music</a> // Anime music generation with a neural network
+    <a class="project" href ="https://gippoo.github.io/music">Music</a> // Anime music generation with a neural network
     <br><br>
-    <a class="proj" href ="https://gippoo.github.io/graphics/cat">Cat Racing</a> // Experimenting with sprites/pixel art and animation
+    <a class="project" href ="https://gippoo.github.io/graphics/cat">Cat Racing</a> // Experimenting with sprites/pixel art and animation
 </div>
 
 </body>
