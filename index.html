@@ -81,13 +81,19 @@
     }
     
     div.gif {
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
         background-color: #606060;
         height: 31px;
         width: 394px;
-        line-height: 31px;
+    }
+    
+    div.giftext {
+        position: relative;
+        left: 50%;
+        top: 42%;
+        transform: translateX(-50%) translateY(-50%);
     }
     
     div.projimg:hover > div.gif{
@@ -119,7 +125,9 @@
     <a class="projimg" href="https://gippoo.github.io/pizzacat/">
         <div class="projimg" style="background-color:#fef2e6;">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/pusheenpizza.gif" height=145>
-            <div class="gif">Pizza Cat // Google Quickdraw Classification</div>
+            <div class="gif">
+                <div class="giftext">Pizza Cat // Google Quickdraw Classification</div>
+            </div>
         </div>
     </a>
     
