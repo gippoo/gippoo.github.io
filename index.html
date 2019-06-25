@@ -14,6 +14,10 @@
         color: white;
     }
     
+    a.projimg {
+        text-decoration: none;
+    }
+    
     a.projimg:link {
         color: white;
     }
@@ -60,8 +64,10 @@
     }
     
     div.projimg {
+        position: relative;
         width: 394px;
         height: 180px;
+        overflow: auto;
         background-color: #606060;
         margin: 10px;
         display: inline-block;
@@ -74,9 +80,11 @@
     }
     
     div.gif {
+        position: absolute;
         background-color: #606060;
         height: 31px;
-        line-height: 31px;
+        width: 394px;
+        line-height: 27px;
     }
     
     div.projimg:hover > div.gif{
@@ -98,21 +106,21 @@
 
 
 <div class="content">
-    <a class="projimg" href="https://gippoo.github.io/digitclassifier2/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/digitclassifier2/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/digitclassifier.png">
             <div>Digit Classifier // MNIST, Keras, TensorFlow.js, p5.js</div>
         </div>
     </a>
     
-    <a class="projimg" href="https://gippoo.github.io/pizzacat/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/pizzacat/">
         <div class="projimg" style="background-color:#fef2e6;">
-            <img src="https://github.com/gippoo/gippoo.github.io/raw/master/pusheenpizza.gif">
+            <img src="https://github.com/gippoo/gippoo.github.io/raw/master/pusheenpizza.gif" height=145>
             <div class="gif">Pizza Cat // Google Quickdraw Classification</div>
         </div>
     </a>
     
-    <a class="projimg" href="https://gippoo.github.io/characterclassifier/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/characterclassifier/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/shokugeki.png" width=394 height=149>
             <div>Shokugeki // Face recognition in anime</div>
@@ -121,14 +129,14 @@
 </div>
 
 <div class="content">
-    <a class="projimg" href="https://gippoo.github.io/dodger/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/dodger/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/monkasgame.png" width=394 height=149>
             <div>monkaS // Game, User Control, Collisions</div>
         </div>
     </a>
     
-    <a class="projimg" href="https://gippoo.github.io/animecolorizer/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/animecolorizer/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/colorizer.png" width=394 height=149>
             <div>Colorizer // Coloring grayscale images with U-net</div>
@@ -137,21 +145,21 @@
 </div>
 
 <div class="content">
-    <a class="projimg" href="https://gippoo.github.io/geneticalg/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/geneticalg/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/genetic1.png" width=394 height=149>
             <div>Genetic Algorithm // JavaScript implementation</div>
         </div>
     </a>
     
-    <a class="projimg" href="https://gippoo.github.io/graphics/blob/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/graphics/blob/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/blobss.png" width=394 height=149>
             <div>Blobs // Simulations and visualizations</div>
         </div>
     </a>
     
-    <a class="projimg" href="https://gippoo.github.io/music/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/music/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/anipiano.jpeg" width=394 height=149>
             <div>Music // NN composed anime music</div>
@@ -160,7 +168,7 @@
 </div>
 
 <div class="content">
-    <a class="projimg" href="https://gippoo.github.io/graphics/cat/" style="text-decoration:none;">
+    <a class="projimg" href="https://gippoo.github.io/graphics/cat/">
         <div class="projimg">
             <img src="https://github.com/gippoo/gippoo.github.io/raw/master/cat1.png" width=394 height=149>
             <div>Cat Racing // Sprites, Pixel Art, Animation</div>
